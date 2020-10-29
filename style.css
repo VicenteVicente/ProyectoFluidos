@@ -1,0 +1,34 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #212121;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flowLines {
+  position: absolute;
+  margin: auto;
+}
+
+.golf-ball {
+  animation: rotation 5s linear infinite;
+  height: 200px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
