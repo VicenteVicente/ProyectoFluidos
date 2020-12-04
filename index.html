@@ -6,59 +6,73 @@
 </head>
 
 <body>
+  <div class="logos">
+    <img
+      src="uc.png">
+    <img 
+    id="ing"
+    src="ing.png" />
+  </div>
   <h1 class="title center">
     Aerodinámica de las pelotas de golf
   </h1>
   <h3 class="title center">
     Vicente Calisto, Felipe Sepúlveda, Matías Lineros y Rubén Alvarado
   </h3>
-  
+
 
   <div class="section">
     <h2 class="title">
-      Título
+      ¿Por qué las pelotas de golf tienen hoyuelos?
     </h2>
     <p class="body">
-      Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren
-      ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum
-      Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren
-      ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum
-      Loren ipsum Loren ipsum Loren ipsum.
+      El diseño de las pelotas de golf se enfoca principalmente en aumentar la distancia que recorrerá en el aire, por
+      ende, las fuerzas aerodinámicas juegan un rol fundamental en esto.
     </p>
-    <img class="img" src="https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/facebook_share/public/Purina%C2%AE%20La%20llegada%20del%20gatito%20a%20casa.jpg?itok=6QG07anP"/>
+    <img class="img" src="pelota1.jfif" />
+    <p class="body">
+      La respuesta principal de porque las pelotas de golf tienen hoyuelos, la da el número de Reynolds crítico, el cual
+      es el valor del número de Reynolds (Re) que permite determinar si el cuerpo está sometido a un flujo laminar o
+      turbulento, en el cual se encontró que si este valor estaba sobre los 2300 es flujo turbulento y si está bajo este
+      valor es flujo laminar.
+    </p>
+    <p class="body">
+      Una pelota de golf tiene un Re igual a 7000, por lo tanto, está en un flujo turbulento. Esto es gracias a los
+      hoyuelos, lo que implica que el flujo llega a ser turbulento a una velocidad más baja que en una esfera lisa. Esto
+      hace al flujo seguir unido a la pelota de golf por más tiempo, lo que implica una reducción de la fricción y por
+      ende que recorra una mayor
+      distancia.
+    </p>
   </div>
   <div class="section">
     <h2 class="title">
-      Título 2
+      Comparación del flujo por pelotas
     </h2>
     <p class="body">
-      Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren
-      ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum
-      Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren
-      ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum
-      Loren ipsum Loren ipsum Loren ipsum.
+      En las pelotas que son de superficie lisa el flujo se separa de manera rápida de estas, mientras que las pelotas
+      con imperfecciones en su superficie como los hoyuelos, la separación del flujo se retrasa al tener una capa límite
+      turbulenta. Para ver los dos tipos de flujos que se forman solo haz click en el botón “cambiar a pelota de golf”.
     </p>
   </div>
   <div id="vis">
     <img id="ball" src="normal.png" />
     <div id="flowLines"></div>
   </div>
-  
+
   <button id="btn">
     Cambiar a pelota de golf
   </button>
-  
   <div class="section">
-    <h2 class="title">
-      Título 3
-    </h2>
     <p class="body">
-      Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren
-      ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum
-      Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren
-      ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum
-      Loren ipsum Loren ipsum Loren ipsum.
+      Cuando la capa límite está en un estado turbulento como en el caso de la pelota de golf, tiene una mayor cantidad
+      de
+      movimiento cerca de la pared que la laminar, producto del transporte y la mezcla turbulenta, que a su vez hacen
+      que
+      se separe relativamente tarde en comparación a una capa límite laminar, que sería el caso de la pelota lisa. Esto
+      resulta en una zona de separación o estela más pequeña detrás de la pelota, y como consecuencia un menor arrastre,
+      tal como se ve en la animación.
     </p>
+    <img class="img" src="relleno.jpg" />
   </div>
 </body>
 <script type="text/javascript" src="index.js"></script>

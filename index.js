@@ -116,24 +116,24 @@ d3.select('#btn').on('click', () => {
   GOLF = !GOLF;
 
   botPath.transition()
-    .duration(200)
-    .ease(d3.easePoly)
+    .duration(500)
+    .ease(d3.easeLinear)
     .attr('d', lineFunction(current));
 
   botPath2.transition()
-    .duration(200)
-    .ease(d3.easePoly)
+    .duration(500)
+    .ease(d3.easeLinear)
     .attr('d', lineFunction(current.map(d => ({ x: d.x, y: d.y + 30 }))));
 
   topPath.transition()
-    .duration(200)
-    .ease(d3.easePoly)
+    .duration(500)
+    .ease(d3.easeLinear)
     .attr('d', lineFunction(current.map(d => ({ x: d.x, y: -d.y }))));
 
   topPath2.transition()
-    .duration(200)
-    .ease(d3.easePoly)
-    .attr('d', lineFunction(current.map(d => ({ x: d.x, y: -d.y-30 }))));
+    .duration(500)
+    .ease(d3.easeLinear)
+    .attr('d', lineFunction(current.map(d => ({ x: d.x, y: -d.y - 30 }))));
 
   d3.select('#ball')
     .attr('src', img);
