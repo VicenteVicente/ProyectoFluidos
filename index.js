@@ -2,8 +2,8 @@ let GOLF = false;
 
 const canvas = d3.select('#flowLines')
   .append('svg')
-  .attr('width', '1200px')
-  .attr('height', '300px');
+  .attr('width', 1200)
+  .attr('height', 300);
 
 const botLineGolf = [
   { x: -600, y: 35 },
@@ -137,4 +137,14 @@ d3.select('#btn').on('click', () => {
 
   d3.select('#ball')
     .attr('src', img);
+
+  d3.select('#btn')
+    .text(GOLF ? 'Cambiar a pelota lisa' : 'Cambiar a pelota de golf')
+    .style('background-color', 'cyan')
+    .style('color', 'black')
+    .transition()
+    .duration(200)
+    .ease(d3.easeLinear)
+    .style('background-color', 'transparent')
+    .style('color', 'cyan');
 })
